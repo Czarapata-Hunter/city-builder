@@ -106,6 +106,12 @@ label {
     padding: 5px;
 }
 
+#city-attraction-input {
+    display: grid;
+    grid-template-columns: auto 25px;
+    gap: 10px;
+}
+
 #output-section {
     text-align: center;
     border: 2px;
