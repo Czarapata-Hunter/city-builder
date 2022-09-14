@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>City-Builder</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section id="input-section">
+                <label>
+                    City Name
+                    <input type="text" />
+                </label>
+                <label>
+                    Climate
+                    <select>
+                        <option class="tropical">Tropical</option>
+                        <option class="dry">Dry</option>
+                        <option class="temperate">Temperate</option>
+                        <option class="continental">Continental</option>
+                        <option class="polar">Polar</option>
+                    </select>
+                </label>
+                <label>
+                    Architecture
+                    <select>
+                        <option class="beaux-arts">Beaux-Arts</option>
+                        <option class="gothic">Gothic</option>
+                        <option class="modern">Modern</option>
+                        <option class="art-deco">Art-Deco</option>
+                        <option class="classic">Classic</option>
+                    </select>
+                </label>
+                <label>
+                    City Attractions
+                    <input type="text" />
+                    <button id="button">+</button>
+                </label>
+            </section>
+            <section id="output-section">
+                <h2>City Name</h2>
+                <h3>Climate</h3>
+                <h3>Architecture</h3>
+                <h3>City Attractions</h3>
+            </section>
+        </main>
+    </body>
 </html>

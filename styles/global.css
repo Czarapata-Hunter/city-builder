@@ -32,4 +32,40 @@ header .logo {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+#input-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 350px;
+    height: 500px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+select {
+    border-radius: 5px;
+}
+
+label {
+    display: grid;
+    padding: 5px;
+}
+
+#output-section {
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    height: 500px;
+    width: 350px;
+    display: grid;
+    display-template-rows: 25px 25px 25px 1fr;
 }
