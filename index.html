@@ -29,14 +29,14 @@
         </header>
 
         <main>
-            <section id="input-section">
+            <section class="input-section">
                 <label>
                     City Name
-                    <input type="text" />
+                    <input id="city-input" type="text" />
                 </label>
                 <label>
                     Climate
-                    <select>
+                    <select id="climate-select">
                         <option class="tropical">Tropical</option>
                         <option class="dry">Dry</option>
                         <option class="temperate">Temperate</option>
@@ -46,7 +46,7 @@
                 </label>
                 <label>
                     Architecture
-                    <select>
+                    <select id="architecture-select">
                         <option class="beaux-arts">Beaux-Arts</option>
                         <option class="gothic">Gothic</option>
                         <option class="modern">Modern</option>
@@ -57,17 +57,22 @@
                 <label>
                     City Attractions
                     <div id="city-attraction-input">
-                        <input type="text" />
-                        <button id="button">+</button>
+                        <input id="attractions-input" type="text" />
+                        <button id="attractions-button">+</button>
                     </div>
                 </label>
             </section>
-            <section id="output-section">
-                <h2>City Name</h2>
-                <h3>Climate</h3>
-                <h3>Architecture</h3>
-                <h3>City Attractions</h3>
-            </section>
+            <article id="output-section">
+                <h1>Enjoy Touring <span id="city-name">Beardtopia</span></h1>
+                <div>
+                    <img id="climate-img" src="/assets/Tropical.jpg" alt="TropicalBeach" />
+                    <img
+                        id="architecture-img"
+                        src="/assets/Beaux-Arts.jpg"
+                        alt="Beaux-Arts Architecture"
+                    />
+                </div>
+            </article>
         </main>
     </body>
 </html>

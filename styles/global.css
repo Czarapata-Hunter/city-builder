@@ -37,7 +37,7 @@ main {
     background: gray;
 }
 
-#input-section {
+.input-section {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 350px;
