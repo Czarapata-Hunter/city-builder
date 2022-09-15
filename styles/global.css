@@ -37,56 +37,38 @@ main {
     background: gray;
 }
 
+.tropical {
+    background-color: aqua;
+}
+
+.dry {
+    background-color: orange;
+}
+
+.temperate {
+    background-color: forestgreen;
+    color: white;
+}
+
+.continental {
+    background-color: rgb(75, 117, 75);
+}
+
+.polar {
+    background-color: white;
+}
 .input-section {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    gap: 10px;
     width: 350px;
     height: 500px;
     border: 2px;
     border-style: solid;
     border-radius: 10px;
-    background-image: url('/assets/City-Image-Input-Box.jpg');
-    color: white;
-}
-
-.tropical {
-    background-image: url('/assets/Tropical.jpg');
-    color: aqua;
-    border: 2px;
-    border-style: solid;
-    border-color: aqua;
-}
-
-.dry {
-    background-image: url('/assets/Desert.jpg');
-    color: orange;
-    border: 2px;
-    border-style: solid;
-    border-color: orange;
-}
-
-.temperate {
-    background-image: url('/assets/Temperate.jpg');
-    color: rgb(6, 63, 6);
-    border: 2px;
-    border-style: solid;
-    border-color: rgb(6, 63, 6);
-}
-
-.continental {
-    background-image: url('/assets/Continental.jpg');
-    color: green;
-    border: 2px;
-    border-style: solid;
-    border-color: green;
-}
-
-.polar {
-    background-image: url('/assets/Polar.jpg');
-    color: white;
-    border: 2px;
-    border-style: solid;
-    border-color: white;
+    color: black;
+    font-weight: bold;
+    background-image: url(/assets/misc/InputBackground.jpg);
 }
 
 input {
@@ -104,6 +86,7 @@ select {
 label {
     display: grid;
     padding: 5px;
+    font-size: 20px;
 }
 
 #city-attraction-input {
@@ -117,18 +100,19 @@ label {
     border: 2px;
     border-style: solid;
     border-radius: 10px;
-    height: 500px;
+    border-color: white;
+    height: 400px;
     width: 700px;
     display: grid;
     display-template-rows: 25px 25px 25px 1fr;
 }
 
-#climate-img {
+#climate-image {
     width: 300px;
     height: 200px;
 }
 
-#architecture-img {
+#architecture-image {
     width: 300px;
     height: 200px;
 }
