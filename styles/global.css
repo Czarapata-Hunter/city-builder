@@ -32,4 +32,107 @@ header .logo {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    background: gray;
+}
+
+.tropical {
+    background-color: aqua;
+}
+
+.dry {
+    background-color: orange;
+}
+
+.temperate {
+    background-color: forestgreen;
+    color: white;
+}
+
+.continental {
+    background-color: rgb(75, 117, 75);
+}
+
+.polar {
+    background-color: white;
+}
+
+.beaux-arts {
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.gothic {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.modern {
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.art-deco {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.classic {
+    font-family: 'Fanwood Text', serif;
+}
+.input-section {
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    gap: 10px;
+    width: 350px;
+    height: 500px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-image: url(/assets/misc/InputBackground.jpg);
+}
+
+input {
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(95, 95, 95);
+}
+
+select {
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(95, 95, 95);
+}
+
+label {
+    display: grid;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#city-attraction-input {
+    display: grid;
+    grid-template-columns: auto 25px;
+    gap: 10px;
+}
+
+#output-section {
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    height: 400px;
+    width: 700px;
+    display: grid;
+    display-template-rows: 25px 25px 25px 1fr;
+}
+
+#climate-image {
+    width: 300px;
+    height: 200px;
+}
+
+#architecture-image {
+    width: 300px;
+    height: 200px;
 }

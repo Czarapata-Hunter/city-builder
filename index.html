@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=IM+Fell+French+Canon+SC&family=MuseoModerno&family=Pathway+Gothic+One&family=Titillium+Web&display=swap"
+            rel="stylesheet"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+    <body>
+        <header>
+            <img class="logo" src="/assets/misc/html_css_js.png" alt="logo" />
+            <h1>City-Builder</h1>
+        </header>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
-
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="input-section">
+                <label>
+                    City Name
+                    <input id="city-input" type="text" />
+                </label>
+                <label>
+                    Climate
+                    <select id="climate-select">
+                        <option value="tropical">Tropical</option>
+                        <option value="dry">Dry</option>
+                        <option value="temperate">Temperate</option>
+                        <option value="continental">Continental</option>
+                        <option value="polar">Polar</option>
+                    </select>
+                </label>
+                <label>
+                    Architecture
+                    <select id="architecture-select">
+                        <option value="beaux-arts">Beaux-Arts</option>
+                        <option value="gothic">Gothic</option>
+                        <option value="modern">Modern</option>
+                        <option value="art-deco">Art-Deco</option>
+                        <option value="classic">Classic</option>
+                    </select>
+                </label>
+                <label>
+                    City Attractions
+                    <div id="city-attraction-input">
+                        <input id="attractions-input" type="text" />
+                        <button id="attractions-button">+</button>
+                    </div>
+                </label>
+            </section>
+            <article id="output-section">
+                <h1>Enjoy Touring <span id="city-name">Beardtopia</span></h1>
+                <div>
+                    <img
+                        id="climate-image"
+                        src="/assets/Climate/Tropical.jpg"
+                        alt="Tropical Beach"
+                    />
+                    <img
+                        id="architecture-image"
+                        src="/assets/Architecture/Beaux-Arts.jpg"
+                        alt="Beaux-Arts Architecture"
+                    />
+                    <ul id="list-attractions"></ul>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>
