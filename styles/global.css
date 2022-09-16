@@ -57,6 +57,26 @@ main {
 .polar {
     background-color: white;
 }
+
+.beaux-arts {
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.gothic {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.modern {
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.art-deco {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.classic {
+    font-family: 'Fanwood Text', serif;
+}
 .input-section {
     display: grid;
     grid-template-rows: 60px 60px 60px 60px 60px;

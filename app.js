@@ -70,10 +70,12 @@ function displayAttractions() {
 }); */
 
 attractionsButton.addEventListener('click', () => {
-    const attractions = attractionsInput.value;
-    city.attractions.push(attractions);
-    displayAttractions();
-    attractionsInput.value = '';
+    if (attractionsInput.value !== '') {
+        const attractions = attractionsInput.value;
+        city.attractions.push(attractions);
+        displayAttractions();
+        attractionsInput.value = '';
+    }
 });
 
 /* Events */
